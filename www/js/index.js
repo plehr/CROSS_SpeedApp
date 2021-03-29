@@ -11,8 +11,7 @@ function measure() {
 
 function posSuccess(pos) {
     var crd = pos.coords;
-    document.getElementById("speed").innerHTML = (crd.speed > 0) ? crd.speed : 0;
-    console.log(crd);
+    document.getElementById("speedNum").innerHTML = (crd.speed > 0) ? crd.speed : 0 +" km/h";
     new Promise(r => setTimeout(r, 2000));
     measure();
 }
