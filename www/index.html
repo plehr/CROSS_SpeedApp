@@ -11,6 +11,7 @@
     <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
     <meta name="color-scheme" content="light dark">
     <link rel="stylesheet" href="css/own.css">
+    <link rel="stylesheet" href="css/cv1.css">
     <title>SpeedApp</title>
 </head>
 
@@ -18,9 +19,12 @@
     <div class="app">
         <button id="startSpeed">Messung starten</button>
         <div id="speedNum">0</div>
+        <input type="range" min="1" max="200" value="42" class="slider" id="fakeSpeed"><br>
+        <canvas id="cv1"></canvas>
     </div>
     <script src="cordova.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/cv1.js"></script>
 </body>
 
 </html>
